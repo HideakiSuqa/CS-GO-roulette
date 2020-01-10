@@ -1,14 +1,21 @@
 import React from 'react';
 import './App.css';
+import Main from './Components/Main/Main';
+import Footer from './Components/Header/Footer';
+import Header from './Components/Footer/Header';
 
-function App() {
-  return (
-    <div className="App">
-      <div className="container">
-        <h1>KOLYA MYDAK</h1>
-      </div>
-    </div>
-  );
+
+export default class App extends React.Component {
+  render(){
+    return (
+      <div className="body">
+        <Header />
+        <Main />
+        <Footer />
+      </div> 
+    );
+  }
 }
 
-export default App;
+
+

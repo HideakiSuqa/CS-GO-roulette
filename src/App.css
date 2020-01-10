@@ -1,0 +1,6 @@
+.body {
+  background: linear-gradient(225deg, #303a61, #293152);
+  box-shadow: -50px -50px -100px #121624, -50px -50px -100px #485692;
+  width: 100%;
+  height: 100%;
+}
