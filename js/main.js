@@ -1,1 +1,0 @@
-console.log("egor mudak ya toje");
