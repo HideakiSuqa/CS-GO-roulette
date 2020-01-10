@@ -1,1 +1,1 @@
-console.log("egor mudak");
+console.log("egor mudak ya toje");
