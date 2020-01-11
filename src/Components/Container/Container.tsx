@@ -1,8 +1,8 @@
 import React from 'react';
-import './Main.css';
-import Circle from './Cirlce/Circle';
+import './Container.css';
+import Circle from './Circle/Circle';
 
-export default class Main extends React.Component {
+export default class Container extends React.Component {
   render(){
     return (
       <div className="container">
