@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-
+import cgc from '../../img/cgc.png';
 
 export default class Header extends React.Component {
   render(){
@@ -8,7 +8,7 @@ export default class Header extends React.Component {
       <header className="header">
         <div className="header_container">
           <div className="header_logo-wrap">
-            <img alt="cgc" src={require('../../img/cgc.png')}/>
+            <img alt="cgc" src={cgc}/>
             <a href="index.html" className="logo">CGC</a>
             </div>
             <div className="header_singup-wrap">

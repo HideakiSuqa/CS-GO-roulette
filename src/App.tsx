@@ -9,7 +9,7 @@ export default class App extends React.Component {
     return (
       <div className="hero bg_gradient">
         <Header />
-        <div className="container-fluid">
+        <div className="container-fluid row">
           <div className="row">
             <div className="col-7">
               <Circle/>
