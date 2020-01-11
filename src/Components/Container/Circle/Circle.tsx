@@ -7,15 +7,19 @@ export default class Circle extends React.Component {
 }
   updateCanvas() {
       const c : any = this.refs.canvas;
+      let width = c.offsetWidth;
+      let height = c.offsetHeight;
       const ctx = c.getContext('2d');
-      ctx.setLineDash([20,10,40,10,50,10,10,30,50,10]);
+      ctx.setLineDash([25,5,30,10,25,15,20,10,30,5]);
       ctx.arc(100,75,50,0, 2*Math.PI);
       ctx.stroke();
-
+      ctx.rotate(102*Math.PI/180);
   }
   render() {
       return (
-          <canvas className="circle col-md-4" ref="canvas" width={300} height={300}/>
+        <div className="circle col-md-4">
+          <canvas ref="canvas" width={150} height={150}/>
+        </div>
       );
   }
 }
