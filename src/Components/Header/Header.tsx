@@ -8,8 +8,8 @@ export default class Header extends React.Component {
         <div className="header_container">
           <div className="header_logo-wrap">
             <a href="index.html" className="logo">CS:GO COIN</a>
-          </div>
-          <div className="header_singup-wrap">
+            </div>
+            <div className="header_singup-wrap">
             <a href="/#" className="signUp">Sign in Steam <i className="fab fa-steam-square"></i> </a>
           </div>
         </div>
