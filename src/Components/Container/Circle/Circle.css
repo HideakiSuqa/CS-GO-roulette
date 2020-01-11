@@ -1,4 +1,5 @@
 .circle {
   position: relative;
   margin-top: 40px;
+  transform: rotate(32deg);
 }

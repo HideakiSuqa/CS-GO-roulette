@@ -8,7 +8,7 @@ export default class Circle extends React.Component {
   updateCanvas() {
       const c : any = this.refs.canvas;
       const ctx = c.getContext('2d');
-      ctx.setLineDash([5,7]);
+      ctx.setLineDash([20,10,40,10,50,10,10,30,50,10]);
       ctx.arc(100,75,50,0, 2*Math.PI);
       ctx.stroke();
 
