@@ -1,24 +1,4 @@
-.box {
-  text-align: center;
+.circle {
   position: relative;
-  line-height: 100px;
-
-  height: 300px;
-  width: 300px;
-  margin-top:0px;
-
-  border: solid;
-  border-radius: 50%;
-  border-width: 5px;
-
-  padding: 5px 5px 5px 15px;
-}
-
-.box::before {
-  border-top-color: #bbb;
-  transform: rotate(45deg);
-}
-
-.box::after {
-  border-right-color: #bbb;
+  margin-top: 40px;
 }

@@ -1,81 +1,89 @@
 /*   Fonts   */
-@font-face{
-    font-family:"cRoboto";
-    font-weight: 400;
-    font-style: normal;
-    src:url(fonts/Roboto/Roboto-Bold.ttf) format("ttf");
+@font-face {
+  font-family: "cRoboto";
+  font-weight: 400;
+  font-style: normal;
+  src: url(fonts/Roboto/Roboto-Bold.ttf) format("ttf");
 }
-@font-face{
-    font-family:"cOpenSans";
-    font-weight: 400;
-    font-style: normal;
-    src:url(fonts/OpenSans/OpenSans-Bold.ttf) format("ttf");
+@font-face {
+  font-family: "cOpenSans";
+  font-weight: 400;
+  font-style: normal;
+  src: url(fonts/OpenSans/OpenSans-Bold.ttf) format("ttf");
 }
-@font-face{
-    font-family:"cPublicSans";
-    font-weight: 400;
-    font-style: normal;
-    src:url(fonts/PublicSans/PublicSans.ttf) format("ttf");
+@font-face {
+  font-family: "cPublicSans";
+  font-weight: 400;
+  font-style: normal;
+  src: url(fonts/PublicSans/PublicSans.ttf) format("ttf");
 }
 /*Main*/
-body{
-    margin:0;
-    padding:0;
+body {
+  margin: 0;
+  padding: 0;
 }
-h1, h2, h3, h4, h5, h6{
-    font-family: 'cRoboto', sans-serif;
-    color:var(--maintext-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "cRoboto", sans-serif;
+  color: var(--maintext-color);
 }
-p{
-    font-family:"cPublicSans", sans-serif;
-    color:var(--text-color);
-    font-size: 16px;
+p {
+  font-family: "cPublicSans", sans-serif;
+  color: var(--text-color);
+  font-size: 16px;
 }
-a{
-    font-family:"cRoboto", sans-serif;
-    color:var(--maintext-color);
-    font-size: 20px;
-    text-decoration: none;
+a {
+  font-family: "cRoboto", sans-serif;
+  color: var(--maintext-color);
+  font-size: 20px;
+  text-decoration: none;
 }
-a:hover{
-    text-decoration: none;
+a:hover {
+  text-decoration: none;
 }
 /*Body*/
-.bg_gradient{
-    background-image: linear-gradient(var(--color_gradient-top),var( --color_gradient-bottom));
+.bg_gradient {
+  background-image: linear-gradient(
+    var(--color_gradient-top),
+    var(--color_gradient-bottom)
+  );
 }
 /*Header*/
-.header{
-    position: fixed;
-    background-color: #242d4d;
-    width: 100%;
+.header {
+  position: fixed;
+  background-color: #242d4d;
+  width: 100%;
 }
-.header_container{
-    max-width: 1580px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: auto;
-    display:flex;
-    justify-content: space-between;
+.header_container {
+  max-width: 1580px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
-.logo{
-    text-decoration: none;
-    font-family:"cRoboto", sans-serif;
-    color:#fff;
-    font-size: 30px;
+.logo {
+  text-decoration: none;
+  font-family: "cRoboto", sans-serif;
+  color: #fff;
+  font-size: 30px;
 }
 
 /* Hero */
-.hero{
-    min-height: 970px;
+.hero {
+  min-height: 970px;
 }
 /*   Переменные   */
-:root{
-    --header-color: #242d4d;
-    --title-color:#363636;
-    --maintext-color:#ffffff;
-    --text-color:#a2bafc;
-    --secondtext-color:#55679e;
-    --color_gradient-top:#253050;
-    --color_gradient-bottom:#415082;
+:root {
+  --header-color: #242d4d;
+  --title-color: #363636;
+  --maintext-color: #ffffff;
+  --text-color: #a2bafc;
+  --secondtext-color: #55679e;
+  --color_gradient-top: #253050;
+  --color_gradient-bottom: #415082;
 }
