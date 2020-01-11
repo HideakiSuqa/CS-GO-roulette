@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import Main from './Components/Main/Main';
+import './Main.css';
+import Container from './Components/Container/Container';
 import Footer from './Components/Header/Footer';
 import Header from './Components/Footer/Header';
 
@@ -10,7 +10,7 @@ export default class App extends React.Component {
     return (
       <div className="body">
         <Header />
-        <Main />
+        <Container />
         <Footer />
       </div> 
     );
