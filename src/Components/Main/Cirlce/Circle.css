@@ -1,0 +1,19 @@
+.box {
+  text-align: center;
+  position: relative;
+  line-height: 100px;
+
+  height: 300px;
+  width: 300px;
+  margin-top: 40px;
+
+  border: solid;
+  border-radius: 50%;
+  border-width: 5px;
+  -moz-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+  -moz-border-top-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+  -moz-border-left-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+  -moz-border-right-colors: #555 rgb(245, 239, 239) #777 #888 #999 #aaa #bbb
+    #ccc;
+  padding: 5px 5px 5px 15px;
+}
