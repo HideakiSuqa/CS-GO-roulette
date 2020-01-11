@@ -5,15 +5,35 @@ export default class Circle extends React.Component {
   componentDidMount() {
     this.updateCanvas();
 }
+
+  radian (degree: number) {
+    let rad = degree * (Math.PI / 180);
+    return rad;
+  }
   updateCanvas() {
       const c : any = this.refs.canvas;
-      let width = c.offsetWidth;
-      let height = c.offsetHeight;
-      const ctx = c.getContext('2d');
-      ctx.setLineDash([25,5,30,10,25,15,20,10,30,5]);
-      ctx.arc(100,75,50,0, 2*Math.PI);
-      ctx.stroke();
-      ctx.rotate(102*Math.PI/180);
+      const context = c.getContext('2d');
+      let dotsPerCircle = 20;
+
+      let interval = (Math.PI * 2) / dotsPerCircle;   
+
+      let centerX = 75;
+      let centerY = 75;
+      let radius = 50;
+
+      for(let i = 0; i < dotsPerCircle; i++){
+
+          let desiredRadianAngleOnCircle = interval*i;
+          
+          let x = centerX + radius * Math.cos(desiredRadianAngleOnCircle);
+          let y = centerY + radius * Math.sin(desiredRadianAngleOnCircle);
+
+          context.beginPath();
+          context.arc(x, y, 3, 0, Math.PI * 2);
+          context.closePath();  
+          context.fill();
+    
+      }
   }
   render() {
       return (
