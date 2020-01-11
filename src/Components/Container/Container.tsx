@@ -6,7 +6,7 @@ export default class Container extends React.Component {
   render(){
     return (
       <section className="hero bg_gradient">
-        <Circle/>
+        <Circle  />
       </section>
     );
   }
