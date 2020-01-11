@@ -55,6 +55,8 @@ a {
   position: fixed;
   background-color: #242d4d;
   width: 100%;
+  padding-top:15px;
+  padding-bottom: 15px;
 }
 .header_container {
   max-width: 1580px;
@@ -98,13 +100,19 @@ a {
   margin-right:47px;
   text-decoration: none;
 }
-.signUp::before{
-  content:"";
-  display:block;
-  position:absolute;
-}
 .signUp:last-child{
   margin-right:0;
+}
+.steamIco{
+  margin-left:15px;
+  font-size:30px;
+  background-color:var(--btnBg);
+  content:"";
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  width: 50px;
+  height:50px;
 }
 /* Hero */
 .hero {
@@ -125,4 +133,6 @@ a {
   --color_circle-orange:#ffc07d;
   --color_circle-pink:#f18aca;
   --color_circle-darkBlue:#4b5e9d;
+  --btnBg:#7a95f3;
+
 }
