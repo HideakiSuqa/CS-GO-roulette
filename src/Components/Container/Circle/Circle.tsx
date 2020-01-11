@@ -13,7 +13,7 @@ export default class Circle extends React.Component {
   updateCanvas() {
       const c : any = this.refs.canvas;
       const context = c.getContext('2d');
-      let dotsPerCircle = 20;
+      let dotsPerCircle = 8;
 
       let interval = (Math.PI * 2) / dotsPerCircle;   
 
@@ -21,18 +21,20 @@ export default class Circle extends React.Component {
       let centerY = 75;
       let radius = 50;
 
-      for(let i = 0; i < dotsPerCircle; i++){
+      for(let i = 1; i < dotsPerCircle; i++){
 
-          let desiredRadianAngleOnCircle = interval*i;
+          let currentPoint = interval * i;
+          let pastPoint = interval * (i-1);
           
-          let x = centerX + radius * Math.cos(desiredRadianAngleOnCircle);
-          let y = centerY + radius * Math.sin(desiredRadianAngleOnCircle);
+          
+          let x1 = centerX + radius * Math.cos(currentPoint);
+          let y1 = centerY + radius * Math.sin(currentPoint);
+          let x2 = centerX + radius * Math.cos(pastPoint);
+          let y2 = centerY + radius * Math.sin(pastPoint);
 
-          context.beginPath();
-          context.arc(x, y, 3, 0, Math.PI * 2);
-          context.closePath();  
-          context.fill();
-    
+          context.moveTo(x1,y1);
+          context.lineTo(x2,y2);
+          context.stroke();
       }
   }
   render() {
