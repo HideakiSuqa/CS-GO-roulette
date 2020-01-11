@@ -39,7 +39,7 @@ export default class Circle extends React.Component {
   }
   render() {
       return (
-        <div className="circle col-md-4">
+        <div className="circle">
           <canvas ref="canvas" width={150} height={150}/>
         </div>
       );
