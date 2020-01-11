@@ -17,7 +17,11 @@
     font-style: normal;
     src:url(fonts/PublicSans/PublicSans.ttf) format("ttf");
 }
-/*     H    */
+/*Main*/
+body{
+    margin:0;
+    padding:0;
+}
 h1, h2, h3, h4, h5, h6{
     font-family: 'cRoboto', sans-serif;
     color:var(--maintext-color);
@@ -30,18 +34,42 @@ p{
 a{
     font-family:"cRoboto", sans-serif;
     color:var(--maintext-color);
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
 }
-body{
-    height: 100%;
-    min-width: 100%;
-    background-image: radial-gradient(var(--color_gradient-top), var(--color_gradient-bottom));
+a:hover{
+    text-decoration: none;
 }
+/*Body*/
 .bg_gradient{
-    background-image: radial-gradient(var(--color_gradient-top),var( --color_gradient-bottom));
+    background-image: linear-gradient(var(--color_gradient-top),var( --color_gradient-bottom));
 }
-/*Переменные*/
+/*Header*/
+.header{
+    position: fixed;
+    background-color: #242d4d;
+    width: 100%;
+}
+.header_container{
+    max-width: 1580px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    text-decoration: none;
+    font-family:"cRoboto", sans-serif;
+    color:#fff;
+    font-size: 30px;
+}
+
+/* Hero */
+.hero{
+    min-height: 970px;
+}
+/*   Переменные   */
 :root{
     --header-color: #242d4d;
     --title-color:#363636;
