@@ -11,7 +11,7 @@ export default class Header extends React.Component {
             <a href="index.html" className="logo">CGC</a>
             </div>
             <div className="header_singup-wrap">
-            <a href="#" className="signUp"> Sign in Steam <span className="steamIco"><i className="fab fa-steam-square"></i></span></a>
+            <a href="/#" className="signUp"> Sign in Steam <span className="steamIco"><i className="fab fa-steam-square"></i></span></a>
           </div>
         </div>
       </header>
