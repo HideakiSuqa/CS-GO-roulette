@@ -5,9 +5,9 @@ import Circle from './Circle/Circle';
 export default class Container extends React.Component {
   render(){
     return (
-      <div className="container">
+      <section className="hero bg_gradient">
         <Circle/>
-      </div>
+      </section>
     );
   }
 }
