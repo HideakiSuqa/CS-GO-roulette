@@ -1,0 +1,18 @@
+@font-face{
+    font-family:"cRoboto";
+    font-weight: 400;
+    font-style: normal;
+    src:url(fonts/Roboto/Roboto-Bold.ttf) format("ttf");
+}
+@font-face{
+    font-family:"cOpenSans";
+    font-weight: 400;
+    font-style: normal;
+    src:url(fonts/OpenSans/OpenSans-Bold.ttf) format("ttf");
+}
+@font-face{
+    font-family:"cPublicSans";
+    font-weight: 400;
+    font-style: normal;
+    src:url(fonts/PublicSans/PublicSans.ttf) format("ttf");
+}
