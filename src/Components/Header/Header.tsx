@@ -1,13 +1,14 @@
 import React from 'react';
 import './Header.css';
 
+
 export default class Header extends React.Component {
   render(){
     return (
       <header className="header">
         <div className="header_container">
           <div className="header_logo-wrap">
-            <img alt="cgc" src="src/img/cgc.png"/>
+            <img alt="cgc" src={require('../../img/cgc.png')}/>
             <a href="index.html" className="logo">CGC</a>
             </div>
             <div className="header_singup-wrap">

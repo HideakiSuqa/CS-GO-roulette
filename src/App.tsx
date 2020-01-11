@@ -1,15 +1,24 @@
 import React from 'react';
 import './App.css';
-import Container from './Components/Container/Container'
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
+import Circle from './Components/Container/Circle/Circle';
 
 export default class App extends React.Component {
   render(){
     return (
-      <div>
+      <div className="hero bg_gradient">
         <Header />
-        <Container />
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-7">
+              <Circle/>
+            </div>
+            <div className="col-3">
+              <p>fafs</p>
+            </div>
+          </div>
+        </div>
         <Footer />
       </div> 
     );
