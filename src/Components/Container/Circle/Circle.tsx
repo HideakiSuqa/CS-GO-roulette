@@ -45,16 +45,16 @@ export default class Circle extends React.Component {
     // .attr("y2", d => { return d.target.y })
     // .style("stroke", "rgb(6,120,155)");
 
-    let data = [2, 4, 8, 10];
+    let data = [2, 8, 6, 10, 4, 5, 7, 3, 5, 6];
     let pie = d3.pie();
     let g = chart.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-    let color = d3.scaleOrdinal(['#4daf4a','#377eb8','#ff7f00','#984ea3','#e41a1c']);
+    let color = d3.scaleOrdinal(['#4cffb5', '#b7cfff','#9665f1','rgba(0,0,0,0)','#f18aca','rgba(0,0,0,0)', '#4b5e9d']);
 
     let arc: any = d3.arc()
-                .innerRadius(90)
+                .innerRadius(93)
                 .outerRadius(100);
-                
+
     let arcs = g.selectAll("arc")
                 .data(pie(data))
                 .enter()
