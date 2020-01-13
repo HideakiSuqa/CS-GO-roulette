@@ -8,7 +8,7 @@ export default class Header extends React.Component {
       <header className="header">
         <div className="header_container">
           <div className="header_logo-wrap">
-            {/* <img alt="cgc" src={cgc}/> */}
+            <img alt="cgc" src={cgc}/>
             <a href="index.html" className="logo">CGC</a>
             </div>
             <div className="header_singup-wrap">

@@ -22,7 +22,7 @@ export default class Circle extends React.Component {
                 8, 6, 
                 10, 4];
     let pie = d3.pie().sort(null);
-    let g = chart.append("g").attr("transform", "translate(" + width / 3 + "," + height / 3 + ")");
+    let g = chart.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
     let color = d3.scaleOrdinal(['#4cffb5', 'rgba(0,0,0,0)',
                                 '#b7cfff','rgba(0,0,0,0)',
