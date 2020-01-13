@@ -9,10 +9,11 @@ export default class App extends React.Component {
     return (
       <div className="hero bg_gradient">
         <Header />
-        <div className="container-fluid row">
+        <div className="container-fluid">
           <div className="row">
-            <div className="col-7">
-              <Circle/>
+            <div className="col-9">
+              <div className="Circle"><Circle /></div>
+    
             </div>
             <div className="col-3">
               <p>fafs</p>
