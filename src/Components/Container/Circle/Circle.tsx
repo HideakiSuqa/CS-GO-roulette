@@ -9,6 +9,8 @@ export default class Circle extends React.Component {
 
     let width = 1000,
     height = 1000;
+    let width = 200,
+    height = 200;
 
     chart.attr("width", width)
           .attr("height", height);
