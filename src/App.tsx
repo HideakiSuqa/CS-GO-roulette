@@ -15,8 +15,9 @@ export default class App extends React.Component {
             <div className="col-5">
              <div className="hero_roulette">
               <div className="hero_roulette-text">
-                <span className="hero_roulette_text-ico"><i className="fas fa-chevron-right"></i></span><a href="#">skins</a><br/><p>36 100</p>
-                </div> 
+                <span className="hero_roulette_text-ico"><i className="fas fa-chevron-right"></i></span><a href="#">skins</a><br/><span className="hero_roulette_text_number"><p>36 100</p>
+                </span>
+              </div>
              < Circle />
              </div>
             </div>
