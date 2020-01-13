@@ -7,8 +7,8 @@ export default class Circle extends React.Component {
   drawChart(){
     let chart = d3.select("#chart").append("svg");
 
-    let width = 200,
-    height = 200;
+    let height = 200;
+    let width = 200;
 
     chart.attr("width", width)
           .attr("height", height);
@@ -22,7 +22,7 @@ export default class Circle extends React.Component {
                 8, 6, 
                 10, 4];
     let pie = d3.pie().sort(null);
-    let g = chart.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    let g = chart.append("g").attr("transform", "translate(" + width / 3 + "," + height / 3 + ")");
 
     let color = d3.scaleOrdinal(['#4cffb5', 'rgba(0,0,0,0)',
                                 '#b7cfff','rgba(0,0,0,0)',
@@ -49,12 +49,12 @@ export default class Circle extends React.Component {
             
     filter.append("feGaussianBlur")
                 .attr("in", "SourceAlpha")
-                .attr("stdDeviation", 5)
+                .attr("stdDeviation", 4)
                 .attr("result", "blur");
     filter.append("feOffset")
                 .attr("in", "blur")
-                .attr("dx", 1)
-                .attr("dy", 5)
+                .attr("dx", 3)
+                .attr("dy", 3)
                 .attr("result", "offsetBlur");
             
     var feMerge = filter.append("feMerge");
