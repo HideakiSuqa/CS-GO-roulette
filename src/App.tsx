@@ -7,9 +7,9 @@ import Circle from './Components/Circle/Circle';
 export default class App extends React.Component {
   render(){
     return (
-      <div className="hero bg_gradient">
+      <div className="bg_gradient">
         <Header />
-        <div className="container-fluid">
+        <div className="hero container-fluid">
           <div className="row">
             <div className="col-9">
               <Circle/>
