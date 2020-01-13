@@ -117,6 +117,7 @@ a {
 /* Hero */
 .hero {
   min-height: 970px;
+  padding-top:100px;
 }
 /*   Переменные   */
 :root {
