@@ -60,8 +60,6 @@ a {
 }
 .header_container {
   max-width: 1580px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: auto;
   display: flex;
   justify-content: space-between;

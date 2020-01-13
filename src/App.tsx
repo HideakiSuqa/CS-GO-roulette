@@ -13,7 +13,12 @@ export default class App extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-5">
+             <div className="hero_roulette">
+              <div className="hero_roulette-text">
+                <span className="hero_roulette_text-ico"><i className="fas fa-chevron-right"></i></span><a href="#">skins</a><br/><p>36 100</p>
+                </div> 
              < Circle />
+             </div>
             </div>
             <div className="col-4">
               <p>AAAAAAAAAAAAAAAAAAAAAAA</p>
