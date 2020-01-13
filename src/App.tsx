@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
-import Circle from './Components/Container/Circle/Circle';
+import Circle from './Components/Circle/Circle';
 
 export default class App extends React.Component {
   render(){
@@ -12,8 +12,7 @@ export default class App extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-9">
-              <div className="Circle"><Circle /></div>
-    
+              <Circle/>
             </div>
             <div className="col-3">
               <p>fafs</p>
