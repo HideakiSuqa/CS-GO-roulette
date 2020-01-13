@@ -7,8 +7,8 @@ export default class Circle extends React.Component {
   drawChart(){
     let chart = d3.select("#chart").append("svg");
 
-    let width = 100,
-    height = 100;
+    let width = 200,
+    height = 200;
 
     chart.attr("width", width)
           .attr("height", height);
@@ -85,7 +85,7 @@ export default class Circle extends React.Component {
 
   render() {
       return (
-        <div id="Chart"></div>
+        <div id="chart"></div>
       );
   }
 
