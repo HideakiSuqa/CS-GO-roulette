@@ -72,12 +72,11 @@ export default class Circle extends React.Component {
                 .attr("filter", "url(#drop-shadow)")
                 .on("click",function(d) { 
 
-                  let rotate = (d.startAngle + d.endAngle)/2 / Math.PI * 180;
+                  let rotate = (d.startAngle + d.endAngle) / Math.PI * 180;
 
                   g.transition()
                     .attr("transform",  "translate(" + width / 2 + "," + height / 2 + ") rotate(" + rotate + ")")
-                    .duration(1000);
-                  
+                    .duration(10000);
                   
                 });
     
