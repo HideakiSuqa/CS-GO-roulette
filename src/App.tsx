@@ -3,7 +3,7 @@ import './App.css';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Circle from './Components/Circle/Circle';
-
+import Progress from './Components/Progress/Progress';
 export default class App extends React.Component {
   render(){
     return (
@@ -22,12 +22,12 @@ export default class App extends React.Component {
               < Circle />
               </div>
               <div className="hero_progress-bar">
-                
+                < Progress />
               </div>
              </div>
             </div>
             <div className="col-4">
-
+            <p>AAAAAAAAAAAAAAAAAAAAAAA</p>    
             </div>
             <div className="col-3"><p>AAAAAAAAAAAAAAAAAAAAAAA</p></div>
           </div>
