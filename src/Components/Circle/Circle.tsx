@@ -33,8 +33,10 @@ export default class Circle extends React.Component {
 
     let arc: any = d3.arc()
                 .innerRadius(90)
-                .outerRadius(95);
+                .outerRadius(95)
+                .cornerRadius(10);
     
+                
 
     let arcs = g.selectAll("arc")
                 .data(pie(data))
