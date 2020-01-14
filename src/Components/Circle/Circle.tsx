@@ -86,7 +86,7 @@ export default class Circle extends React.Component {
 
   render() {
       return (
-        <div id="chart"></div>
+        <div className="circle" id="chart"></div>
       );
   }
 
